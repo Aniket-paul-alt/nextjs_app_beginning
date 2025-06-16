@@ -2,6 +2,15 @@ import Image from "next/image";
 import style from "./service.module.css";
 import thapa from "@/public/thapa.jpg";
 
+// This is a Next.js page component for the Services page
+// It includes metadata for the page and renders a list of team members with their details
+export const metadata = {
+  title: "Services",
+  description: "Explore our services and meet our team",
+  authors : [{name: "Thapa Technical", url: "https://www.youtube.com/@ThapaTechnical"}, {name: "John Doe", url: "https://www.example.com"}],
+  keywords: ["services", "team", "frontend", "backend", "development"],
+};
+
 const Services = async () => {
   return (
     <>

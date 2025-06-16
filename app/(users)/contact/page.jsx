@@ -1,3 +1,10 @@
+export const metadata = {
+  title: "Contact Us",
+  description: "Get in touch with our team",
+  authors: [{ name: "Thapa Technical", url: "https://www.youtube.com/@ThapaTechnical" }],
+  keywords: ["contact", "support", "team"],
+};
+
 export default function Contact() {
   return (
     <div>
