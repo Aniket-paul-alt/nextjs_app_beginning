@@ -52,7 +52,7 @@ const workSans = Work_Sans({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html>
       <body className={`${roboto.variable} ${workSans.variable} `}>
         {children}
       </body>
