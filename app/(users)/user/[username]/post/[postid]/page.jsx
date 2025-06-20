@@ -1,6 +1,10 @@
-export default async function singleUserPagePost(props) {
+"use client";
+
+import { use } from "react";
+
+export default function singleUserPagePost(props) {
     console.log(props)
-    const postData = await props.params
+    const postData = use(props.params)
     console.log(postData)
 
     return (
