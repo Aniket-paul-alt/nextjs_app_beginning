@@ -5,6 +5,8 @@ export default async function DataFetchPage(props) {
   const { name } = searchParams;
   console.log(name)
 
+  await new Promise(resolve => setTimeout(resolve, 3000)); // Simulate delay
+
   // Handle case where no name is provided
   if (!name || name.charAt(0) === `"` || name.charAt(0) === `'`) {
     return (
@@ -30,6 +32,7 @@ export default async function DataFetchPage(props) {
   const confidencePercentage = userData.probability * 100;
 
   console.log(userData);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full relative overflow-hidden">
