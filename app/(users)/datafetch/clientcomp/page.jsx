@@ -126,7 +126,7 @@ export default function DataFetchClient() {
                   Data Sample Size
                 </span>
                 <span className="text-sm font-bold text-gray-800">
-                  {userData.count.toLocaleString()}
+                  {infoData.count.toLocaleString()}
                 </span>
               </div>
             </div>
